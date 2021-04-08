@@ -30,3 +30,13 @@ PRIMARY KEY(todo_id),
 FOREIGN KEY(user_id) REFERENCES users(user_id),
 FOREIGN KEY(status_id) REFERENCES status(status_id)
 );
+
+INSERT INTO users(first_name, last_name, email_address, phone_number)
+VALUES("Jim", "Fresh", "jimfresh@freshmode.com", "6235551234");
+INSERT INTO users(first_name, last_name, email_address, phone_number)
+VALUES("Fred", "Fresh", "fred@redfred.com", "2535551234");
+INSERT INTO users(first_name, last_name, email_address, phone_number)
+VALUES("Sally", "Fresh", "sally@sally.com", "7125554521");
+
+INSERT INTO status(status)
+VALUES("things i need to do go here");
